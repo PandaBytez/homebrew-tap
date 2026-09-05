@@ -5,36 +5,29 @@ NetworkManager.
 
 ## Installation
 
-### Standard Installation
+### Recommended One-Line Install (with Auto-Update Trust)
 
 ```bash
-brew tap pandabytez/tap
-brew install neutron
+brew tap pandabytez/tap && brew trust pandabytez/tap && brew install neutron
 ```
 
-Or install in a single command:
-
-```bash
-brew install pandabytez/tap/neutron
-```
+This taps the repository, marks it as trusted so automated updates and upgrades work seamlessly, and installs `neutron`.
 
 Both `neutron` and `neutron-vpn` binary aliases will be available in your PATH.
 
 ---
 
-### Homebrew Tap Trust Verification
-
-In modern Homebrew versions with tap security verification enabled, non-official taps require explicit trust before
-loading formulae.
-
-To mark this tap as trusted:
+### Manual Step-by-Step Installation
 
 ```bash
-# Trust the entire tap
+# 1. Tap the repository
+brew tap pandabytez/tap
+
+# 2. Trust the tap (required for non-interactive updates)
 brew trust pandabytez/tap
 
-# Or trust specifically the neutron formula
-brew trust --formula pandabytez/tap/neutron
+# 3. Install
+brew install neutron
 ```
 
 To verify your trusted entries:
