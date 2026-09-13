@@ -1,8 +1,8 @@
 class Neutron < Formula
   desc "Fast WireGuard profile manager via NetworkManager"
   homepage "https://github.com/PandaBytez/neutron"
-  url "https://github.com/PandaBytez/neutron/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "9ddb3a61640faa2be861f393254e72290a0faff8a95bf0128ca4269bc1fb18ba"
+  url "https://github.com/PandaBytez/neutron/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "2b506c584adb6631fe76a5ff0662aa3adb0ae6f9c1bb07106bf459c97aed98e0"
   license "GPL-3.0-or-later"
 
   depends_on "rust" => :build
